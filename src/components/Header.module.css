@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+
+:root {
+  --neon-color: #7c3aed;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15, 18, 24, 0.8);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-family: "Jersey 10", sans-serif;
+
+  /* padding y tamaño fluidos */
+  padding: clamp(10px, 2.5vh, 16px) clamp(12px, 4vw, 24px);
+  animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    text-align: center;
+  }
+}
+
+/* título responsive: se adapta de móvil a desktop */
+.header > h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 6vw, 3rem);
+  line-height: 1.1;
+}
+
+/* sombra neón */
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 5px var(--neon-color), 0 0 5px var(--neon-color),
+      0 0 5px var(--neon-color);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--neon-color), 0 0 10px var(--neon-color),
+      0 0 30px var(--neon-color);
+  }
+}
+
+/* accesibilidad: si el usuario prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .header {
+    animation: none;
+  }
+}

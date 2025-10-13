@@ -1,0 +1,9 @@
+.footerContainer {
+  background-color: black;
+  font-family: "Inter", Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding-bottom: 1rem;
+}

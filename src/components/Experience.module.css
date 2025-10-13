@@ -1,0 +1,150 @@
+/* ===== Wrapper ===== */
+.wrapper {
+  font-family: "Inter", Helvetica, sans-serif;
+  background: black; /* negro azulado */
+  color: #e5e7eb;
+  padding: 2rem 9rem;
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding-inline: 1rem;
+  }
+}
+
+.wrapper h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Encabezado de empresa ===== */
+.company {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0 12px;
+  border-bottom: 1px solid #2a2f36;
+  margin-bottom: 8px;
+}
+
+.company img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.company h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.company span {
+  display: block;
+  font-size: 0.95rem;
+  color: #9aa3af;
+  margin-top: 2px;
+}
+
+/* ===== Items ===== */
+.item {
+  border-bottom: 1px solid #2a2f36;
+  padding: 10px 0;
+}
+.item:last-of-type {
+  border-bottom: none;
+}
+
+/* Hover sutil solo en el resumen */
+.item .summary:hover {
+  background: #1e2a38;
+}
+
+/* ===== Summary clickable ===== */
+.summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 12px 4px;
+}
+.summary::-webkit-details-marker {
+  display: none;
+}
+.summary:focus {
+  outline: none;
+}
+.summary:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Títulos/fechas */
+.headings h3 {
+  margin: 0;
+  font-size: 1.25rem; /* título */
+  font-weight: 600;
+  line-height: 1.3;
+}
+.headings small {
+  display: block;
+  margin-top: 4px;
+  color: #9aa3af;
+  font-size: 0.95rem; /* fechas */
+}
+
+/* ===== Chevron (caret) ===== */
+.chevron {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+  border-right: 2px solid #9aa3af;
+  border-bottom: 2px solid #9aa3af;
+  transform: rotate(45deg);
+  transition: transform 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+  margin-top: 2px;
+  opacity: 0.9;
+}
+
+.item[open] .chevron {
+  transform: rotate(-45deg); /* abierto */
+  border-color: #e5e7eb;
+  opacity: 1;
+}
+
+/* ===== Contenido con apertura suave ===== */
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.item[open] .content {
+  grid-template-rows: 1fr;
+}
+.content > div {
+  overflow: hidden;
+  padding: 0 4px 12px;
+}
+.content p {
+  color: #c9d1d9;
+  line-height: 1.65;
+  margin: 4px 0 0;
+}
+
+.vertical-divider {
+  width: 1px; /* Set the width of the line */
+  height: 100px; /* Set the desired height of the line */
+  background-color: white; /* Set the color of the line */
+}
+
+/* ===== Motion respect (opcional) ===== */
+@media (prefers-reduced-motion: reduce) {
+  .chevron,
+  .content {
+    transition: none;
+  }
+}
