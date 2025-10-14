@@ -17,12 +17,12 @@ const experienceObject = [
       {
         title: "Junior Front-end Developer",
         description:
-          "I have been working with Atlantida Insurance in Honduras, developing a digital onboarding platform for their customers and a back-office system to manage data. This experience strengthened my teamwork skills and improved cross-functional communication to deliver successful solutions.",
+          "I have been working with Atlantida Insurance in Honduras, developing and designing a digital onboarding platform for their customers and a back-office system to manage data. This experience strengthened my teamwork skills and improved cross-functional communication to deliver successful solutions.",
       },
       {
         title: "Quadient Data Analyst",
         description:
-          "As a Data Analyst and Quadient Developer, I designed and optimizedautomated workflows for high-volume document production, ETL forfinancial/government data, and database solutions in PostgreSQL. I also built internal JS/REST tools and integrated Mailjet forlarge-scale distribution while providing technical support to keyfinancial clients (accuracy, performance and service continuity).",
+          "As a Data Analyst and Quadient Developer, I designed and optimized automated workflows for high-volume document production, ETL for financial/government data, and database solutions in PostgreSQL. I also built internal JS/REST tools and integrated Mailjet forlarge-scale distribution while providing technical support to keyfinancial clients (accuracy, performance and service continuity).",
       },
     ],
   },
@@ -58,7 +58,7 @@ const educationObject = [
           "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
         period: "2025 - Currently",
         description:
-          "I’ve been taking a React crash course to build up from basics to advanced skills—learning hooks, state management, context, effects, performance optimization, and how to use the React DevTools (component tree and profiler).",
+          "I’ve been taking a React crash course to build up from basics to advanced skills-learning hooks, state management, context, effects, performance optimization, and how to use the React DevTools (component tree and profiler).",
       },
     ],
   },
