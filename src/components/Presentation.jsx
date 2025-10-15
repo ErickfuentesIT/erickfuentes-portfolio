@@ -25,7 +25,7 @@ export default function Presentation() {
             <img src="GitHub.png" alt="" />
           </a>
         </div>
-        <a href="ErickFuentes_CV.pdf" className={style.cvButton} download>
+        <a href="EN_ErickFuentes_CV.pdf" className={style.cvButton} download>
           Download CV
         </a>
       </section>
