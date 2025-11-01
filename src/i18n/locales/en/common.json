@@ -1,0 +1,95 @@
+{
+  "presentation": {
+    "hello": "Hello ✌, I am",
+    "position": "Software Developer | Data Analyst",
+    "place": "At PBS El Salvador",
+    "button": "Download CV"
+  },
+  "about_me": {
+    "title": "About me 👨‍💻",
+    "description": "I'm a computer science technician and data analyst with nearly 2 years of experience developing solutions for large corporate and banking clients at PBS El Salvador using Quadient. Recently, I started designing and building front-end solutions with Figma and React, expanding my skill set beyond back-end and data processes. I'm passionate about continuous learning and driven by the challenge of building efficient applications. I aim to grow into a well-rounded developer, contributing to products that combine robust architecture, clean code, and great user experience."
+  },
+  "experience": {
+    "title": "Experience 💼",
+    "jobs": [
+      {
+        "place": "PBS El Salvador",
+        "time": "FEB. 2024 - Present",
+        "summary": [
+          {
+            "title": "Junior Front-end Developer",
+            "description": "I have been working with Atlantida Insurance in Honduras, designing and developing a digital onboarding platform for their customers and a back-office system to manage data. This experience strengthened my teamwork skills and improved cross-functional communication to deliver successful solutions."
+          },
+          {
+            "title": "Quadient Data Analyst",
+            "description": "As a Data Analyst and Quadient Developer, I designed and optimized automated workflows for high-volume document production, ETL for financial/government data, and database solutions in PostgreSQL. I also built internal JS/REST tools and integrated Mailjet for large-scale distribution while providing technical support to key financial clients (accuracy, performance, and service continuity)."
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects 🖥️",
+    "main_projects": [
+      {
+        "title": "Orkesta App",
+        "description": "A university, project-focused to-do app designed to organize tasks, track progress, and keep workflow in sync. It can manage personal or team projects."
+      },
+      {
+        "title": "PopCorn Cinema",
+        "description": "A personal film log designed to track movies watched, rate each title, and organize viewing history."
+      },
+      {
+        "title": "Travelling App",
+        "description": "An interactive travel log that allows users to mark places they've visited on a world map and save personal notes. Designed to visualize travel history and create a personalized map of memories across the globe."
+      }
+    ],
+    "title2": "Small Projects 🖥️",
+    "small_projects": [
+      {
+        "title": "A React Quiz",
+        "description": "A small interactive quiz with 15 questions about React fundamentals. It tracks the user’s score, provides instant feedback, and is designed to practice core concepts in a fun, lightweight format."
+      },
+      {
+        "title": "Bill Splitter",
+        "description": "A simple tool to track shared expenses with friends, showing who paid and who still owes money."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education 📚",
+    "type": [
+      {
+        "place": "Don Bosco University",
+        "time": "2022 - Present",
+        "summary": [
+          {
+            "title": "Computer Science Engineering",
+            "period": "2024 - Present",
+            "description": "Currently pursuing an Engineering degree, strengthening algorithms, data structures, OOP, SQL, computer networks, operating systems (Windows/Linux), software engineering (Git, testing, Agile), and web development with React."
+          },
+          {
+            "title": "Computer Technician Degree",
+            "period": "2022 - 2024",
+            "description": "I built a solid foundation in computer science: algorithms, data structures, object-oriented programming, SQL, and operating systems (Windows Server and Linux-based)."
+          }
+        ]
+      },
+      {
+        "place": "Udemy",
+        "time": "Jul. 2025 - Present",
+        "summary": [
+          {
+            "title": "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
+            "period": "2025 - Present",
+            "description": "I’ve been taking a React course to build from basics to advanced skills—learning hooks, state management, context, effects, performance optimization, and how to use React DevTools (component tree and profiler)."
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "made_by": "by erickfuentes",
+    "from": "Made with 💙🤍 from Santa Tecla, El Salvador"
+  }
+}

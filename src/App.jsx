@@ -7,6 +7,7 @@ import Marquee from "./components/Marquee";
 import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { useTranslation } from "react-i18next";
 
 const experienceObject = [
   {
@@ -67,16 +68,20 @@ const educationObject = [
 function App() {
   const [experience] = useState(experienceObject);
   const [education] = useState(educationObject);
+  const { t, i18n } = useTranslation();
+  const changeTo = (lng) => i18n.changeLanguage(lng);
 
   return (
     <div className="container">
+      <button onClick={() => changeTo("es")}>ES</button>
+      <button onClick={() => changeTo("en")}>EN</button>
       <Header />
       <Presentation />
       <AboutMe />
       <Marquee />
-      <Experience experience={experience} title="Experience 💼" />
+      <Experience experience={experience} title={t("experience.title")} />
       <Projects />
-      <Experience experience={education} title="Education 📚" />
+      <Experience experience={education} title={t("education.title")} />
       <Footer />
     </div>
   );

@@ -5,6 +5,8 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -16,6 +18,60 @@
   /* padding y tamaño fluidos */
   padding: clamp(10px, 2.5vh, 16px) clamp(12px, 4vw, 24px);
   animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+.languageToggle {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+/* From Uiverse.io by MikeAndrewDesigner — fixed */
+.switch {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 8.5em;
+  height: 3.3em;
+}
+
+/* El input cubre toda el área clickeable (pero invisible) */
+.switch input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2; /* por encima del slider */
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: #2c2c2c;
+  transition: background 0.4s;
+}
+
+/* Knob */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  left: 10%;
+  bottom: 20%;
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  transition: transform 0.4s;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(3.9em);
+}
+
+.switch input:checked + .slider {
+  background: #1e1e1e;
 }
 
 @media (max-width: 1024px) {

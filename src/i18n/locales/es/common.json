@@ -1,0 +1,95 @@
+{
+  "presentation": {
+    "hello": "Hola ✌, soy",
+    "position": "Desarrollador de Software | Analista de Datos",
+    "place": "En PBS El Salvador",
+    "button": "Descargar CV"
+  },
+  "about_me": {
+    "title": "Sobre mí 👨‍💻",
+    "description": "Soy técnico en computación y analista de datos con casi 2 años de experiencia desarrollando soluciones para clientes corporativos y bancarios en PBS El Salvador utilizando Quadient. Recientemente comencé a diseñar y construir soluciones front-end con Figma y React, ampliando mis capacidades más allá del back-end y los procesos de datos. Me apasiona el aprendizaje continuo y me motiva el reto de crear aplicaciones eficientes. Aspiro a crecer como desarrollador integral, contribuyendo a productos con arquitectura sólida, código limpio y excelente experiencia de usuario."
+  },
+  "experience": {
+    "title": "Experiencia 💼",
+    "jobs": [
+      {
+        "place": "PBS El Salvador",
+        "time": "FEB. 2024 - Actualidad",
+        "summary": [
+          {
+            "title": "Desarrollador Front-end Junior",
+            "description": "He trabajado con Atlántida Seguros (Honduras), diseñando y desarrollando una plataforma de onboarding digital para clientes y un back-office para gestionar datos. Esta experiencia fortaleció mi trabajo en equipo y mejoró la comunicación transversal para entregar soluciones exitosas."
+          },
+          {
+            "title": "Analista de Datos (Quadient)",
+            "description": "Como analista y desarrollador en Quadient, diseñé y optimicé flujos automatizados para producción masiva de documentos, ETL de datos financieros/gubernamentales y soluciones de base de datos en PostgreSQL. También construí herramientas internas JS/REST e integré Mailjet para distribución a gran escala, brindando soporte técnico a clientes financieros clave (precisión, rendimiento y continuidad del servicio)."
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title1": "Proyectos 🖥️",
+    "main_projects": [
+      {
+        "title": "Orkesta App",
+        "description": "Aplicación de listas de tareas enfocada en proyectos universitarios, diseñada para organizar tareas, seguir el progreso y mantener el flujo de trabajo sincronizado. Permite gestionar proyectos personales o de equipo."
+      },
+      {
+        "title": "PopCorn Cinema",
+        "description": "Registro personal de películas para llevar control de títulos vistos, calificar cada uno y organizar el historial de visualización."
+      },
+      {
+        "title": "Travelling App",
+        "description": "Bitácora de viaje interactiva que permite marcar lugares visitados en un mapa mundial y guardar notas personales. Diseñada para visualizar el historial de viajes y crear un mapa personalizado de recuerdos alrededor del mundo."
+      }
+    ],
+    "title2": "Proyectos Pequeños 🖥️",
+    "small_projects": [
+      {
+        "title": "Un Quiz de React",
+        "description": "Quiz interactivo con 15 preguntas sobre fundamentos de React. Registra la puntuación, ofrece retroalimentación inmediata y está pensado para practicar conceptos clave de forma divertida y ligera."
+      },
+      {
+        "title": "Divisor de Gastos",
+        "description": "Herramienta simple para llevar el control de gastos compartidos con amigos, mostrando quién pagó y quién aún debe."
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación 📚",
+    "type": [
+      {
+        "place": "Universidad Don Bosco",
+        "time": "2022 - Actualidad",
+        "summary": [
+          {
+            "title": "Ingeniería en Ciencias de la Computación",
+            "period": "2024 - Actualidad",
+            "description": "Actualmente cursando la carrera, fortaleciendo algoritmos, estructuras de datos, POO, SQL, redes de computadoras, sistemas operativos (Windows/Linux), ingeniería de software (Git, testing, Agile) y desarrollo web con React."
+          },
+          {
+            "title": "Técnico en Computación",
+            "period": "2022 - 2024",
+            "description": "Formé una base sólida en ciencias de la computación: algoritmos, estructuras de datos, programación orientada a objetos, SQL y sistemas operativos (Windows Server y distribuciones Linux)."
+          }
+        ]
+      },
+      {
+        "place": "Udemy",
+        "time": "Jul. 2025 - Actualidad",
+        "summary": [
+          {
+            "title": "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
+            "period": "2025 - Actualidad",
+            "description": "Estoy llevando un curso de React para avanzar de lo básico a lo avanzado: hooks, gestión de estado, context, efectos, optimización de rendimiento y uso de React DevTools (árbol de componentes y profiler)."
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "made_by": "por erickfuentes",
+    "from": "Hecho con 💙🤍 desde Santa Tecla, El Salvador"
+  }
+}
