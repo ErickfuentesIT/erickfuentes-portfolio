@@ -68,13 +68,10 @@ const educationObject = [
 function App() {
   const [experience] = useState(experienceObject);
   const [education] = useState(educationObject);
-  const { t, i18n } = useTranslation();
-  const changeTo = (lng) => i18n.changeLanguage(lng);
+  const { t } = useTranslation();
 
   return (
     <div className="container">
-      <button onClick={() => changeTo("es")}>ES</button>
-      <button onClick={() => changeTo("en")}>EN</button>
       <Header />
       <Presentation />
       <AboutMe />

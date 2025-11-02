@@ -1,18 +1,19 @@
+import { useTranslation } from "react-i18next";
 import style from "./Presentation.module.css";
 
 export default function Presentation() {
+  const { t } = useTranslation();
+
   return (
     <div className={style.presentationContainer}>
       <section className={style.avatar}>
         <img src="FotosErick-1.jpg" alt="" />
       </section>
       <section className={style.information}>
-        <h3>Hello ✌, I am</h3>
+        <h3>{t("presentation.hello")}</h3>
         <h1>Erick Eduardo Fuentes</h1>
-        <h3>Front-end Developer / Data Analyst</h3>
-        <h3>
-          At <strong>PBS El Salvador</strong>
-        </h3>
+        <h3>{t("presentation.position")}</h3>
+        <h3>{t("presentation.place")}</h3>
         <hr />
         <div className={style.socialMediaIcons}>
           <a
@@ -26,7 +27,7 @@ export default function Presentation() {
           </a>
         </div>
         <a href="EN_ErickFuentes_CV.pdf" className={style.cvButton} download>
-          Download CV
+          {t("presentation.button")}
         </a>
       </section>
     </div>

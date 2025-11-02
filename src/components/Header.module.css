@@ -26,6 +26,10 @@
   gap: 5%;
 }
 
+.languageToggle img {
+  width: 2rem;
+}
+
 /* From Uiverse.io by MikeAndrewDesigner — fixed */
 .switch {
   font-size: 10px;
