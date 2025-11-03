@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import style from "./Presentation.module.css";
 
-export default function Presentation() {
+export default function Presentation({ currentLanguage }) {
   const { t } = useTranslation();
-
   return (
     <div className={style.presentationContainer}>
       <section className={style.avatar}>
@@ -26,7 +25,15 @@ export default function Presentation() {
             <img src="GitHub.png" alt="" />
           </a>
         </div>
-        <a href="EN_ErickFuentes_CV.pdf" className={style.cvButton} download>
+        <a
+          href={
+            currentLanguage === "en"
+              ? "EN_ErickFuentes_CV.pdf"
+              : "ES_ErickFuentes_CV.txt"
+          }
+          className={style.cvButton}
+          download
+        >
           {t("presentation.button")}
         </a>
       </section>

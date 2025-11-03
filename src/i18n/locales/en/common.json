@@ -29,7 +29,7 @@
     ]
   },
   "projects": {
-    "title": "Projects 🖥️",
+    "title1": "Projects 🖥️",
     "main_projects": [
       {
         "title": "Orkesta App",
@@ -83,6 +83,11 @@
             "title": "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
             "period": "2025 - Present",
             "description": "I’ve been taking a React course to build from basics to advanced skills—learning hooks, state management, context, effects, performance optimization, and how to use React DevTools (component tree and profiler)."
+          },
+          {
+            "title": "Node.js, Express, MongoDB & More: The Complete Bootcamp with Jonas Schmedtmann",
+            "period": "2025 - Present",
+            "description": "I learned to build complete applications using Node, Express, MongoDB, and Mongoose, developing a scalable RESTful API and a server-side rendered website. I deepened my understanding of how Node.js works internally, implemented authentication, security, Stripe payments, email sending, and deployed the project to production."
           }
         ]
       }

@@ -1,10 +1,15 @@
 import styles from "./Experience.module.css";
+import ExperienceSummary from "./ExperienceSummary";
 
-export default function Experience({ experience, title }) {
+export default function Experience({ experienceData, title, translation }) {
+  const dataMerged = translation.map((t, i) => ({
+    ...t,
+    ...experienceData[i],
+  }));
   return (
     <section className={styles.wrapper}>
       <h2>{title}</h2>
-      {experience.map((exp) => (
+      {dataMerged.map((exp) => (
         <>
           <header className={styles.company}>
             <img src={exp.logo} alt="pbs" />
@@ -15,23 +20,7 @@ export default function Experience({ experience, title }) {
             </div>
           </header>
           {exp.summary.map((summary) => (
-            <>
-              <details className={styles.item} close>
-                <summary className={styles.summary}>
-                  <div className={styles.headings}>
-                    <h3>{summary.title}</h3>
-                    <small>{summary.period}</small>
-                  </div>
-                  <span className={styles.chevron} aria-hidden="true" />
-                </summary>
-
-                <div className={styles.content}>
-                  <div>
-                    <p>{summary.description}</p>
-                  </div>
-                </div>
-              </details>
-            </>
+            <ExperienceSummary summary={summary} key={summary.title} />
           ))}
         </>
       ))}

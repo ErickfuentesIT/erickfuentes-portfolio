@@ -83,6 +83,11 @@
             "title": "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
             "period": "2025 - Actualidad",
             "description": "Estoy llevando un curso de React para avanzar de lo básico a lo avanzado: hooks, gestión de estado, context, efectos, optimización de rendimiento y uso de React DevTools (árbol de componentes y profiler)."
+          },
+          {
+            "title": "Node.js, Express, MongoDB & More: The Complete Bootcamp with Jonas Schmedtmann",
+            "period": "2025 - Actualidad",
+            "description": "Aprendí a desarrollar aplicaciones completas con Node, Express, MongoDB y Mongoose, creando una API RESTful escalable y un sitio web renderizado en el servidor. Profundicé en cómo funciona Node.js internamente, apliqué autenticación, seguridad, pagos con Stripe, envío de correos y desplegué el proyecto a producción."
           }
         ]
       }

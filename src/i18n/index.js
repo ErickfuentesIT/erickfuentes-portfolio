@@ -6,10 +6,10 @@ import en from "./locales/en/common.json";
 
 i18n.use(initReactI18next).init({
   fallbackLng: "en",
-  supportedLngs: ["es", "en"],
+  supportedLngs: ["en", "es"],
   resources: {
-    es: { common: es },
     en: { common: en },
+    es: { common: es },
   },
   ns: ["common"],
   defaultNS: "common",

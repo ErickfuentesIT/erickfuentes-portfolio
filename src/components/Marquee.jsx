@@ -1,20 +1,8 @@
 import styles from "./Marquee.module.css";
-
-const icons = [
-  { src: "/icons/html.svg", label: "HTML" },
-  { src: "/icons/css.svg", label: "CSS" },
-  { src: "/icons/javascript.svg", label: "JavaScript" },
-  { src: "/icons/react.svg", label: "React" },
-  { src: "/icons/nextjs-icon.svg", label: "Next.js" },
-  { src: "/icons/figma.svg", label: "Figma" },
-  { src: "/icons/git.svg", label: "Git" },
-  { src: "/icons/java.svg", label: "Java" },
-  { src: "/icons/mysql.svg", label: "MySql" },
-  { src: "/icons/postgresql.svg", label: "PostgreSQL" },
-];
+import { stackIcons } from "./../data/stack";
 
 export default function Marquee() {
-  const loop = [...icons, ...icons];
+  const loop = [...stackIcons, ...stackIcons];
 
   return (
     <div className={styles.marquee}>

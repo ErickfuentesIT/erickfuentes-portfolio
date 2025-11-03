@@ -1,0 +1,15 @@
+export const stackIcons = [
+  { src: "/icons/html.svg", label: "HTML" },
+  { src: "/icons/css.svg", label: "CSS" },
+  { src: "/icons/javascript.svg", label: "JavaScript" },
+  { src: "/icons/react.svg", label: "React" },
+  { src: "/icons/nextjs-icon.svg", label: "Next.js" },
+  { src: "/icons/node.png", label: "NodeJS" },
+  { src: "/icons/express.png", label: "Express JS" },
+  { src: "/icons/java.svg", label: "Java" },
+  { src: "/icons/figma.svg", label: "Figma" },
+  { src: "/icons/git.svg", label: "Git" },
+  { src: "/icons/mysql.svg", label: "MySQL" },
+  { src: "/icons/postgresql.svg", label: "PostgreSQL" },
+  { src: "/icons/mongodb.svg", label: "MongoDB" },
+];

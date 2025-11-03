@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
@@ -8,77 +7,50 @@ import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { useTranslation } from "react-i18next";
-
-const experienceObject = [
-  {
-    logo: "Logo_PBS_Web_2.jpg",
-    place: "PBS El Salvador",
-    time: "FEB. 2024 - Currently",
-    summary: [
-      {
-        title: "Junior Front-end Developer",
-        description:
-          "I have been working with Atlantida Insurance in Honduras, developing and designing a digital onboarding platform for their customers and a back-office system to manage data. This experience strengthened my teamwork skills and improved cross-functional communication to deliver successful solutions.",
-      },
-      {
-        title: "Quadient Data Analyst",
-        description:
-          "As a Data Analyst and Quadient Developer, I designed and optimized automated workflows for high-volume document production, ETL for financial/government data, and database solutions in PostgreSQL. I also built internal JS/REST tools and integrated Mailjet forlarge-scale distribution while providing technical support to keyfinancial clients (accuracy, performance and service continuity).",
-      },
-    ],
-  },
-];
-
-const educationObject = [
-  {
-    logo: "udb.jpg",
-    place: "Don Bosco University",
-    time: "2022 - Currently",
-    summary: [
-      {
-        title: "Computer Science Engineering",
-        period: "2024 - Currently",
-        description:
-          "Currently pursuing an Engineering degree, strengthening algorithms, data structures, OOP, SQL, computer networks, operating systems (Windows/Linux), software engineering (Git, testing, Agile), and web development with React.",
-      },
-      {
-        title: "Computer Technician Degree",
-        period: "2022 - 2024",
-        description:
-          "I built a solid foundation in computer science: algorithms, data structures, object-oriented programming, SQL, and operating systems (Windows Server and Linux-based).",
-      },
-    ],
-  },
-  {
-    logo: "udemy-light.png",
-    place: "Udemy",
-    time: "Jul. 2025 - Currently",
-    summary: [
-      {
-        title:
-          "The Ultimate React Course 2025: React, Next.js, Redux & More with Jonas Schmedtmann",
-        period: "2025 - Currently",
-        description:
-          "I’ve been taking a React crash course to build up from basics to advanced skills-learning hooks, state management, context, effects, performance optimization, and how to use the React DevTools (component tree and profiler).",
-      },
-    ],
-  },
-];
+import { experienceData } from "./data/experience";
+import { educationData } from "./data/education";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [experience] = useState(experienceObject);
-  const [education] = useState(educationObject);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const experienceTranslate = t("experience.jobs", { returnObjects: true });
+  const educationTranslate = t("education.type", { returnObjects: true });
+  // console.log(experienceTranslate);
+  // console.log(experienceData);
+  const [checked, setChecked] = useState(i18n.language.startsWith("es"));
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language || "en");
+
+  useEffect(
+    function () {
+      i18n.changeLanguage(checked ? "es" : "en");
+      setCurrentLanguage(i18n.language);
+    },
+    [checked, i18n]
+  );
+
+  function handleCheck(e) {
+    setChecked(e.target.checked);
+  }
+
+  console.log(currentLanguage);
 
   return (
     <div className="container">
-      <Header />
-      <Presentation />
+      <Header onCheck={handleCheck} />
+      <Presentation currentLanguage={currentLanguage} />
       <AboutMe />
       <Marquee />
-      <Experience experience={experience} title={t("experience.title")} />
+      <Experience
+        experienceData={experienceData}
+        translation={experienceTranslate}
+        title={t("experience.title")}
+      />
       <Projects />
-      <Experience experience={education} title={t("education.title")} />
+      <Experience
+        experienceData={educationData}
+        translation={educationTranslate}
+        title={t("education.title")}
+      />
       <Footer />
     </div>
   );
