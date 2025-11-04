@@ -29,7 +29,7 @@ export default function Presentation({ currentLanguage }) {
           href={
             currentLanguage === "en"
               ? "EN_ErickFuentes_CV.pdf"
-              : "ES_ErickFuentes_CV.txt"
+              : "ES_ErickFuentes_CV.pdf"
           }
           className={style.cvButton}
           download

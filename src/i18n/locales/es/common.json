@@ -47,7 +47,7 @@
     "title2": "Proyectos Pequeños 🖥️",
     "small_projects": [
       {
-        "title": "Un Quiz de React",
+        "title": "Un Cuestionario de React",
         "description": "Quiz interactivo con 15 preguntas sobre fundamentos de React. Registra la puntuación, ofrece retroalimentación inmediata y está pensado para practicar conceptos clave de forma divertida y ligera."
       },
       {
